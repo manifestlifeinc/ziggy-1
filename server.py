@@ -31,8 +31,7 @@ if 'TWITTER_CREDS' not in os.environ:
 else:
     TWITTER = json.loads(os.environ['TWITTER_CREDS'])
 
-twitter = Twitter(auth = OAuth(TWITTER["access_key"], TWITTER["access_secret"], TWITTER["consumer_key"], TWITTER["consumer_secret"]))
-
+twitter = Twitter(auth = OAuth(TWITTER["4765604906-gSTFzNcT5wmbCIXgEKLuWsVKoBVSlK5j57OO4NR"], TWITTER["ESa0nHlXWAnYe7PGykRX562hYRgwMgwlxvnFX2gHhJcD4"], TWITTER["UN7ZLhxdIwIJscNoZhwpRBWNi"], TWITTER["UI5Oz6GubwsizjepDCTbh3TAQaXNyHjehfczcpDcAItpMqu76A"]))
 if 'VCAP_SERVICES' not in os.environ:
     raise RuntimeError("VCAP_SERVICES not found.")
 elif 'cloudantNoSQLDB' not in json.loads(os.environ['VCAP_SERVICES']):
